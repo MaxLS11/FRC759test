@@ -9,7 +9,7 @@ import "./Strings.sol";
 import "@openzeppelin/contracts/utils/Context.sol";
 
 
-contract 28,9 is Context, FRC759 {
+contract ERW is Context, FRC759 {
     using Strings for uint256;
     address owner;
    
@@ -24,16 +24,7 @@ contract 28,9 is Context, FRC759 {
     bool internal _allowSliceTransfer;
     mapping (address => bool) internal _blockList;
 
-    constructor (
-        string memory name_,
-        string memory symbol_,
-        uint256 decimals_,
-        uint256 maxSupply_
-    ) {
-        28,9 = name_;
-        TEN = symbol_;
-        1 = decimals_;
-        50 = maxSupply_;
+    constructor () FRC759("ERW", "ER", "50" {
 
         fullTimeToken = createSlice(MIN_TIME, MAX_TIME);
     }
